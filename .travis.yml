@@ -5,7 +5,7 @@ node_js:
 before_run:
 - "npm ci"
 
-run:
-- "npm run lint"
-- "npm run test"
-- "npm run deploy"
+script:
+- npm run lint
+- npm run test
+- npm run deploy
