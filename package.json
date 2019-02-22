@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "lint": "npx eslint index.js",
-    "deploy": "",
-    "build": "",
+    "deploy": "echo 'deployed'",
+    "build": "echo 'built'",
     "test": "node test.js"
   },
   "repository": {
