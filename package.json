@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "lint": "echo 'q'; echo $AUTH; echo 'w'",
-    "deploy": "now alias echo $(now deploy) test.$TRAVIS_BRANCH",
+    "lint": "eslint index.js",
+    "deploy": "now --token $AUTH alias echo $(now --token $AUTH deploy) test.$TRAVIS_BRANCH",
     "build": "echo 'built'",
     "test": "node test.js"
   },
