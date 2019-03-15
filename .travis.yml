@@ -4,15 +4,13 @@ node_js:
 
 before_run:
 - "npm ci"
-
-script:
 - npm run lint
 - npm run test
+
+script:
 - npm run deploy
 - echo "Branch = $TRAVIS_BRANCH"
 # - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
 # - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 
-deploy:
-#- now
 
