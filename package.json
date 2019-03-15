@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint index.js",
-    "deploy": "now --token $AUTH alias $(echo $(now --token $AUTH deploy)) test.$TRAVIS_BRANCH.now.sh",
+    "deploy": "now --token $AUTH alias $(echo $(now --token $AUTH deploy)) test-$TRAVIS_BRANCH.now.sh",
     "build": "echo 'built'",
     "test": "node test.js"
   },
